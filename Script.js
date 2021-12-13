@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 const newGame = document.getElementById("NewGame");
 const throwDice = document.getElementById("ThrowDice");
 const hold = document.getElementById("Hold");
@@ -55,6 +54,3 @@ hold.addEventListener('click', () => {
         }
 
     });
-=======
-
->>>>>>> 6f7892759cab181d5470f11042e236124d181723
