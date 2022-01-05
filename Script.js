@@ -7,6 +7,9 @@ var p2Round = document.getElementById("Player2Round");
 var p1Score = document.getElementById("Player1Score");
 var p2Score = document.getElementById("Player2Score");
 
+const dot1 = document.getElementById("dot1");
+const dot2 = document.getElementById("dot2");
+
 var p1Global = 0;
 var p2Global = 0;
 var activePlayer = 0;
@@ -43,6 +46,8 @@ hold.addEventListener('click', () => {
             p1Global = p1Global + parseInt(p1Round.innerHTML,10);
             p1Round.innerHTML = 0;
             activePlayer = 1;
+            dot1.style.backgroundColor = 'red';
+            dot2.style.backgroundColor = 'white';
             return;
         }
         else {
@@ -50,6 +55,8 @@ hold.addEventListener('click', () => {
             p2Global = p2Global + parseInt(p2Round.innerHTML,10);
             p2Round.innerHTML = 0;
             activePlayer = 0;
+            dot1.style.backgroundColor = 'white';
+            dot2.style.backgroundColor = 'red';
             return;
         }
 
