@@ -9,33 +9,38 @@
   </head>
  <body>
   <header></header>
- 
+ <div>
   <section class="Player1">
     <div>
     <scan>Player 1</scan>
     <scan id="dot1" class="dot1"></scan>
   </div>
-    <p>Score:</p>
     <p id="Player1Score">0</p>
+    <div>
     <p>Current:</p>
     <p id="Player1Round">0</p>
+  </div>
   </section>
-  <section>
-  <button id="NewGame">New Game</button>
-  <button id="ThrowDice">Throw dice</button>
-  <button id="Hold">Hold</button>
+  <section class="control">
+  <button id="NewGame">NEW GAME</button>
+  <div class="dice">
+    <img src="img/dice-six-faces-six.svg">
+  </div>
+  <button id="ThrowDice">THROW DICE</button>
+  <button id="Hold">HOLD</button>
 </section>
   <section class="Player2">
     <div>
     <scan>Player 2</scan>
     <scan id="dot2" class="dot2"></scan>
   </div>
-    <p>Score:</p>
     <p id="Player2Score">0</p>
+    <div>
     <p>Current:</p>
     <p id="Player2Round">0</p>
+  </div>
   </section>
-  
+</div>
   <script src="Script.js"></script>
 </body>
 </html>

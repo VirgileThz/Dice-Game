@@ -14,6 +14,16 @@ var p1Global = 0;
 var p2Global = 0;
 var activePlayer = 0;
 
+newGame.addEventListener('click', () => {
+    activePlayer = 1;
+    dot1.style.backgroundColor = 'red';
+    dot2.style.backgroundColor = 'white';
+    p1Round.innerHTML = 0;
+    p1Score.innerHTML = 0;
+    p2Round.innerHTML = 0;
+    p2Score.innerHTML = 0;
+})
+
 throwDice.addEventListener('click', () => {
    let dice =(Math.floor(Math.random()*6)+1);
    console.log(dice);
@@ -29,11 +39,11 @@ throwDice.addEventListener('click', () => {
    }
    else {
        if (activePlayer == 0) {
-        p1Round.innerHTML = parseInt(p1Round.innerHTML,10) + dice;
+        p2Round.innerHTML = parseInt(p2Round.innerHTML,10) + dice;
         
        }
        else {
-        p2Round.innerHTML = parseInt(p2Round.innerHTML,10) + dice;
+        p1Round.innerHTML = parseInt(p1Round.innerHTML,10) + dice;
 
        }
    }
